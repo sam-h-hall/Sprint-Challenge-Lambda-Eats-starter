@@ -69,7 +69,7 @@ export default function Form() {
 
     const newOrder ={
       ...order,
-      [event.target.name]: event.target.type === "checkbox" ? event.target.checked : errors.target.value
+      [event.target.name]: event.target.type === "checkbox" ? event.target.checked : event.target.value
     }
     validateChange(event);
     setOrder(newOrder);
