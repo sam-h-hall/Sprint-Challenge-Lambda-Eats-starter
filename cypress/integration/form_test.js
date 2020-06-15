@@ -16,5 +16,8 @@ describe("Testing form inputs", function() {
     cy.get("[data-cy=instructions]")
       .type("more cheese")
       .should("have.value", "more cheese");
+
+    cy.get("[data-cy=submit")
+      .click();
   })
 })

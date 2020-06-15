@@ -123,7 +123,7 @@ export default function Form() {
           <textarea name="instructions" value={order.instructions} onChange={inputChange} type="textbox" data-cy="instructions" />
         </label>
 
-        <button>Submit Order</button>
+        <button data-cy="submit">Submit Order</button>
       </form>
         <pre>{JSON.stringify(post, null, 2)}</pre>
     </>
