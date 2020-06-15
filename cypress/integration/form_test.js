@@ -7,13 +7,14 @@ describe("Testing form inputs", function() {
       .type("Sam Hall")
       .should("have.value", "Sam Hall");
     
+    cy.get("#size")
+      .select("medium")
+      .should("have.value", "medium")
+    
     cy.get("[type=checkbox]").check()
-    // cy.get("#size")
-    //   .select("medium")
-    //   .should("have.value", "medium")
 
-    // cy.get("[data-cy=instructions]")
-    //   .type("more cheese")
-    //   .should("have.value", "more cheese");
+    cy.get("[data-cy=instructions]")
+      .type("more cheese")
+      .should("have.value", "more cheese");
   })
 })

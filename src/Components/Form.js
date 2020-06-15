@@ -40,7 +40,13 @@ export default function Form() {
   }
 
   const formSchema = yup.object().shape({
-    name: yup.string().min(2).required('Must be at least 2 characters')
+    name: yup.string().min(2).required('Must be at least 2 characters'),
+    size: yup.mixed(),
+    pepperoni: yup.boolean(),
+    jalapeno: yup.boolean(),
+    pineapple: yup.boolean(),
+    sausage: yup.boolean(),
+    instructions: yup.string()
   })
 
   const validateChange = event => {
