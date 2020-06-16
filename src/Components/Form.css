@@ -1,0 +1,37 @@
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 800px;
+  padding: 50px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input {
+  width: 200px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.checkboxes label {
+  flex-direction: row;
+  /* align-content: flex-start; */
+}
+
+button {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
